@@ -45,6 +45,7 @@ namespace AntMe_2_Ants
         public override void Waiting()
         {
             ShowDebugInfo("wartet");
+            MoveForward();
         }
 
         public override void Tick()
