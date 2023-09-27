@@ -40,7 +40,7 @@ namespace AntMe_2_Ants
 
         public override void Waiting()
         {
-            
+            MoveForward();
         }
 
         public override void Tick()
