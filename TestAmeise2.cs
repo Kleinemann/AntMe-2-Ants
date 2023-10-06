@@ -35,7 +35,7 @@ namespace AntMe_2_Ants
 
         public override void Init()
         {
-            ShowDebugInfo(" wurde geboren");
+            //ShowDebugInfo(" wurde geboren");
         }
 
         public override void Waiting()
@@ -45,7 +45,7 @@ namespace AntMe_2_Ants
 
         public override void Tick()
         {
-            ShowDebugInfo(" tiktak");
+            //ShowDebugInfo(" tiktak");
         }
     }
 }

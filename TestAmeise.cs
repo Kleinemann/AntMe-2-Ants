@@ -21,10 +21,10 @@ namespace AntMe_2_Ants
         AttackModifier = -1,
         EnergyModifier = -1,
         LoadModifier = -1,
-        RangeModifier = -1,
+        RangeModifier = 1,
         RotationSpeedModifier = -1,
-        SpeedModifier = 6,
-        ViewRangeModifier = -1
+        SpeedModifier = 2,
+        ViewRangeModifier = 1
         )]
     public class TestAmeise : AntCore
     {
@@ -39,18 +39,23 @@ namespace AntMe_2_Ants
 
         public override void Init()
         {
-            ShowDebugInfo(" erwacht zum Leben");
+            //ShowDebugInfo(" erwacht zum Leben");
         }
 
         public override void Waiting()
         {
-            ShowDebugInfo("wartet");
+            //("wartet");
             MoveForward();
         }
 
         public override void Tick()
         {
-            ShowDebugInfo("Tick");
+            //ShowDebugInfo("Tick");
+        }
+
+        public override void FindsSugar()
+        {
+            ShowDebugInfo("ZUCKER GEFUNDEN");
         }
     }
 }
